@@ -21,7 +21,7 @@ jobs:
     - uses: r-lib/actions/setup-r-dependencies@v2
 
     - name: Test R packages
-      run: Rscript -e 'library(dplyr); df <\- data.frame(x = 1:10); head(df)'
+      run: Rscript -e 'library(dplyr); df <- data.frame(x = 1:10); head(df)'
     
     - name: Install packages
       run: R -e 'install.packages("ggplot2")'
