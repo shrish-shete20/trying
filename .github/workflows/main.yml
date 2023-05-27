@@ -30,4 +30,4 @@ jobs:
     # Run R script
     - name: Scrape
       run: Rscript Project-report/onlyme.R
-      working-directory: ./Track-R-Translation
+      working-directory: Track-R-Translation
