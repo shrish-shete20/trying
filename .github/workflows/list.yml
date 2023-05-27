@@ -17,8 +17,5 @@ jobs:
           repository: shrish-shete20/Track-R-Translation
           path: Track
       - name: List contents of directory
-        run: |
-         cd Track
-         ls
-      - name: Print working directory
-        run: pwd
+        run: ls 
+        working-directory: Track
