@@ -28,4 +28,5 @@ jobs:
 
     # Run R script
     - name: Scrape
-      run: Rscript please/try2.R
+      run: Rscript Project-report/onlyme.R
+      working-directory: Track-R-Translation
