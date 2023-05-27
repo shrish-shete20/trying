@@ -12,9 +12,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: List contents of home directory
-        run: |
-          cd please
-          ls
+      - uses: actions/checkout@v3
+        with: 
+          repository: shrish-shete20/Track-R-Translation
+          path: Track-R-Translation
+      - name: List contents of directory
+        run: ls
       - name: Print working directory
         run: pwd
