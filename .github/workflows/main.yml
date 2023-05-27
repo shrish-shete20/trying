@@ -21,6 +21,7 @@ jobs:
     - uses: actions/checkout@v3
       with: 
         repository: shrish-shete20/Track-R-Translation
+        path: Track-R-Translation
     - uses: actions/checkout@v3
     - uses: r-lib/actions/setup-r@v2
     - name: Print working directory
@@ -29,4 +30,4 @@ jobs:
     # Run R script
     - name: Scrape
       run: Rscript Project-report/onlyme.R
-      working-directory: ../Track-R-Translation
+      working-directory: ./Track-R-Translation
