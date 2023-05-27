@@ -1,0 +1,15 @@
+name: Example workflow
+
+# Controls when the action will run.
+on:
+  push:
+    branches: main
+
+jobs: 
+  example-job:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: List contents of home directory
+        run: ls ~
