@@ -29,3 +29,4 @@ jobs:
     # Run R script
     - name: Scrape
       run: Rscript please/try2.R
+      working-directory: trying
