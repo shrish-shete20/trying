@@ -16,6 +16,7 @@ jobs:
         with: 
           repository: shrish-shete20/Track-R-Translation
           path: Track
-      - name: List contents of directory
-        run: ls 
+      - uses: r-lib/actions/setup-r@v2
+      - name: Running R code
+        run: Rscript Project-report/onlyme.R
         working-directory: Track
